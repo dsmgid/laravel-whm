@@ -1,0 +1,24 @@
+{
+    "name": "dsmgid/laravel-whm",
+    "description": "Laravel WHM API Package.",
+    "keywords": ["framework", "laravel", "cPanel", "WHM", "cPanel API"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Salvatore Cahyo",
+        "email": "salva@dsgroupmedia.com"
+    }],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "illuminate/support": "~8",
+        "dsmgid/php-whm-api": "~1.0.1"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "dsmgid\\CpanelWhm\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
