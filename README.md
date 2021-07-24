@@ -1,23 +1,23 @@
 ## Laravel cPanel WHM Package
 
 ### Contents
-- [Installation Guide](#installation-guide)
-- [Configuration](#configuration)
-- [Usage](#usage)
+- [Laravel cPanel WHM Package](#laravel-cpanel-whm-package)
+	- [Contents](#contents)
+	- [Installation Guide](#installation-guide)
+	- [Configuration](#configuration)
+	- [Usage](#usage)
+	- [Multiple Servers](#multiple-servers)
 
-### IMPORTANT NOTE
-
-If you are Laravel 4 user, please use v1.0.1 version instead.
 
 ### Installation Guide
 
 To install this package, you can run this code via your terminal
 ```shell
-	composer require gufy/cpanel-whm:~1.0
+	composer require dsmgid/laravel-whm:~1.0
 ```
 Or update your `composer.json` by adding this line
 ```json
-	"gufy/cpanel-whm":"~1.0"
+	"dsmgid/laravel-whm":"~1.0"
 ```
 Then, run this code
 ```shell
@@ -25,7 +25,7 @@ Then, run this code
 ```
 After install it, you have to add this line on your `app/config/app.php` on Service Providers lines.
 ```php
-	'Gufy\CpanelWhm\CpanelWhmServiceProvider',
+	'dsmgid\CpanelWhm\CpanelWhmServiceProvider',
 ```
 
 It will automatically set an alias 'CpanelWhm' as Facade Accessor.
@@ -34,7 +34,7 @@ It will automatically set an alias 'CpanelWhm' as Facade Accessor.
 
 In this package, it only using hash as its authentication. It's the safer way than using your root plain password. First, run this command
 ```shell
-	php artisan vendor:publish gufy/cpanel-whm
+	php artisan vendor:publish dsmgid/laravel-whm
 ```
 It will generate new file at `config/cpanel-whm.php`. Edit necessary lines.
 
